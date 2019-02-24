@@ -1,0 +1,12 @@
+extends layout.pug
+
+block footer
+    footer
+        p FOOTER TEXT in INDEX
+
+
+block content
+    h1= _.get(params, 'defaultTitle', 'Def tit')
+
+    p= _.get(params, 'content', 'Def content')
+
